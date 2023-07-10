@@ -25,7 +25,11 @@
     box-sizing: border-box;
     font-family: GT Walsheim Pro Regular,Arial,Helvetica,sans-serif;
   }
-  
+  ::-webkit-scrollbar{
+    border-radius: 0;
+    height: 8px;
+    width: 8px;
+  }
   body {
     background-image: url(https://f-code.tech/static/media/background.44e6d635564b753377de.png);
     background-repeat: no-repeat;
@@ -34,7 +38,7 @@
 
 /* Begin Nav */
 
-.header {
+.Header {
     position: fixed;
     height: auto;
     width: 100%;
@@ -50,7 +54,7 @@
     transition: transform 0.5s ease-in-out 0s;
   }
   
-#main_nav {
+#Main_nav {
   display: flex;
   align-items: center;
   width: 80%;
@@ -62,7 +66,7 @@
   border-radius: 16px;
   justify-content: space-between;
 }
-#main_nav .left_nav{
+#Main_nav .Left_nav{
   height: 44px;
   left: 0px;
   top: 0px;
@@ -72,12 +76,12 @@
   align-items: center;
 }
 
-#main_nav .left_nav > ul {
+#Main_nav .Left_nav > ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.left_nav #nav h1 {
+.Left_nav #Nav h1 {
   font-family: 'GT Walsheim Pro Bold', Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 25px;
@@ -87,13 +91,13 @@
   text-decoration: none;
 }
 
-.left_nav #nav div {
+.Left_nav #Nav div {
   background: url(/Assets/Image/F-Code\ logo.png);
   width: 50px;
   height: 50px;
 }
 
-#main_nav  .right_nav {
+#Main_nav  .Right_nav {
     width: 700px;
     text-align: center;
     display: flex;
@@ -101,12 +105,12 @@
     justify-content: flex-end;
   }
 
-#nav > li {
+#Nav > li {
     display: inline-block;
   }
   
   
-.right_nav #nav li a {
+.Right_nav #Nav li a {
     font-family: 'GT Walsheim Pro Bold', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 000;
@@ -125,7 +129,7 @@
     justify-content: space-between;
   }
   
-.right_nav #nav li a:hover{
+.Right_nav #Nav li a:hover{
     background:#45ce7c;
     color:#ffffff;
   }
@@ -133,7 +137,7 @@
 /* End Nav */
 
 /* Begin Slider */
-.slider{
+.Slider{
   width: 100%;
   margin-left: auto;
   box-sizing: border-box;
@@ -146,7 +150,7 @@
 }
  /* Begin Content1 */
 
-.content1{
+.Content1{
     font-family: 'GT Walsheim Pro Bold',Arial,Helvetica,sans-serif;
     margin: 0;
     padding: 0;
@@ -154,43 +158,45 @@
     flex-direction: row;
 }
 
-.content1 .right_content{
+.Content1 .Right_content{
   font-family: "GT Walsheim Pro Bold";
   font-style: normal;
 }
-.right_content{
+.Right_content{
   padding-right: 50px;
 }
-.slider .content1 h1{
+.Slider .Content1 h1{
     font-weight: 1000;
     font-size: 65px;
     line-height: 80px;
     margin-bottom: -10px;
 }
-#lasth1{
+#Last_h1{
   margin-bottom: 30px;
 }
-.right_content h1 span {
+.Right_Content h1 span {
   color: rgb(69, 206, 124);
   font-family: GT Walsheim Pro Bold;
 }
- .content1 p{
+
+.Content1 p{
     font-weight: 200;
     font-size: 22px;
     line-height: 150%;
     max-width: 600px;
     margin-bottom: 60px;
 }
-.right_content p span{
+
+.Right_content p span{
   color: rgb(69, 206, 124);
   font-family: GT Walsheim Pro Bold;
   font-size: 25px;
 }
-.button{
+.Button{
     display:flex;
 }
 
-.button .Sign_Up_Now a{
+.Button .Sign_Up_Now a{
   font-family: GT Walsheim Pro Bold;
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -212,7 +218,7 @@
 .Sign_Up_Now:hover{
   filter: brightness(95%);
 }
-.button .Time_line a{
+.Button .Time_line a{
   font-size: 17px;
   font-family: GT Walsheim Pro Bold;
     color: rgb(0, 0, 0);
@@ -239,7 +245,7 @@
   75% {
     transform: translateY(-10px);}
 }
-.content1 .img img{
+.Content1 .img img{
   margin-top: -60px;
   margin-right: -24px;
   animation: 3s linear 0s infinite normal none running animation;
@@ -247,17 +253,17 @@
  /* End Content1 */
 
  /* Begin Content2 */
-.content2{
+.Content2{
   max-width: 1500px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 175px 0px;
 }
-.left_content{
+.Left_content{
   display: flex;
 }
-.left_content .content{
+.Left_content .Content{
   width: 200px;
   height: 200px;
   background: linear-gradient(152.97deg, rgba(21, 21, 21, 0.08) 0%, rgba(21, 21, 21, 0) 100%);
@@ -269,7 +275,7 @@
   align-items: center;
   margin: auto;
 }
-.left_content .content h2{
+.Left_content .Content h2{
   font-family: "GT Walsheim Pro Bold";
   font-weight: 1000;
   font-size: 60px;
@@ -277,7 +283,7 @@
   margin-bottom: 0px;
   color: rgb(69, 206, 124);
 }
-.left_content .content h5{
+.Left_content .Content h5{
   font-family: "GT Walsheim Pro Bold";
   font-style: normal;
   font-weight: 1000;
@@ -286,25 +292,25 @@
   text-align: center;
   color: rgba(21, 21, 21, 0.5);
 }
-.right_content{
+.Right_content{
   font-family: "GT Walsheim Pro Bold";
   font-size: 22px;
   line-height: 150%;
   margin: 0px;
 }
-.right_content > h4{
+.Right_content > h4{
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
   color: rgb(69, 206, 124);
   margin-bottom: 16px;
 }
-.right_content >h1{
+.Right_content >h1{
   font-family: "GT Walsheim Pro Bold";
   margin-bottom: 16px;
   font-size: 40px;
 }
-.right_content > h3{
+.Right_content > h3{
   font-family: "GT Walsheim Pro Regular";
   font-size: 20px;
   font-weight: 300;
@@ -312,18 +318,18 @@
   max-width: 640px;
   margin-bottom: 40px;
 }
-.right_content > h3 span{
+.Right_content > h3 span{
   font-size: 25px;
   color: rgb(69, 206, 124);
   font-family: "GT Walsheim Pro Bold";
 }
-.left_content > h3 strong{
+.Left_content > h3 strong{
   font-weight: 900;
 }
-.right_content > div a{
+.Right_content > div a{
   text-decoration: none;
 }
-.right_content > div a h4{
+.Right_content > div a h4{
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
@@ -333,24 +339,27 @@
  /* End Content 2 */
 
  /* Begin Content 3 */
- .content3{
+ .Content3{
   max-width: 1000px;
   display: flex;
   justify-content: center;
- }
- .main_content{
+}
+
+.Main_content{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   flex-direction:column ;
- }
- .header_content{
+}
+
+.Header_content{
   display: flex;
   justify-content: center;
   flex-direction: column;
- }
- .header_content > p:first-child {
+}
+
+.Header_content > p:first-child {
   margin : auto auto 12px;
   font-family: Inter;
   font-style: normal;
@@ -361,7 +370,8 @@
   color: rgb(69, 206, 124);
   text-align: center;
  }
- .header_content > p:last-child{
+
+ .Header_content > p:last-child{
   display: block;
   font-family: "GT Walsheim Pro Bold";
   font-style: normal;
@@ -370,19 +380,19 @@
   line-height: 125%;
   color: rgb(17, 25, 40);
  }
- .slider_content{
+ .Slider_content{
   position: relative;
   margin: -200px 0px 100px 0px;
   max-width: 2000px;
   width: 900px;
   overflow-x: hidden;
  }
- .slider_content  ul >li{
+ .Slider_content  ul >li{
   display: inline-block;
   text-decoration: none;
   padding: 0px 15px;
  }
- .slider_content ul{
+ .Slider_content ul{
   width: 850px;
   display: flex;
   justify-content: space-between;
@@ -390,18 +400,18 @@
  /* End Content 3 */
 
  /* Begin Content 4 */
- .content4{
+ .Content4{
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 96px 0px;
   gap: 10px;
  }
- .content4 .main_content{
+.Content4 .Main_content{
   display: flex;
   flex-direction: column;
- }
- .content4 .main_content h1{
+}
+.Content4 .Main_content h1{
   font-family: "GT Walsheim Pro Bold";
   font-style: normal;
   font-weight: 800;
@@ -410,7 +420,7 @@
   display: flex;
   align-items: center;
  }
- .content4 .main_content > p{
+.Content4 .Main_content > p{
   font-family: Inter;
   font-style: normal;
   font-weight: 300;
@@ -420,7 +430,7 @@
   margin: 16px 0px;
   color: rgb(107, 114, 128);
 }
-.content4 .main_content ul{
+.Content4 .Main_content ul{
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -428,7 +438,7 @@
   padding: 30px 0px;
   gap: 70px;
 }
-.content4 .main_content ul li {
+.Content4 .Main_content ul li {
   padding: 25px;
   width: 200px;
   background: linear-gradient(152.97deg, rgba(105, 105, 105, 0.2) 0%, rgba(21, 21, 21, 0) 100%);
@@ -440,11 +450,11 @@
   transition: all 0.1s ease-in-out 0s;
   cursor: pointer;
 }
-.content4 .main_content ul li:hover{
+.Content4 .Main_content ul li:hover{
   transform: translateY(-12px);
   transition-duration: 0.3s ;
 }
-li .icon svg {
+li .Icon svg {
   height: 50px;
   width: 50px;
 }
@@ -455,13 +465,13 @@ li > .Spirits{
   margin-top: 10px;
   color: rgb(0, 196, 100);
 }
-.content4  ul li .line{
+.Content4  ul li .Line{
   width: 150px;
   height: 0px;
   margin-top: 15px;
   border: 1px solid rgba(171, 171, 171, 0.38);
 }
-.content4 li p{
+.Content4 li p{
   margin-top: 40px;
   font-family: Inter;
   font-style: normal;
@@ -472,14 +482,14 @@ li > .Spirits{
  /* End Content 4 */
 
  /* Begin Content 5 */
-.content5{
+.Content5{
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 50px 0px;
   gap: 10px;
 }
-.content5 .main_content{
+.Content5 .Main_content{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -487,7 +497,7 @@ li > .Spirits{
   padding: 0px;
   gap: 64px;
 }
-.content5 .main_content > div{
+.Content5 .Main_content > div{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -496,7 +506,7 @@ li > .Spirits{
   gap: 16px;
   height: 88px;
 }
-.content5 .main_content  div h1:first-child{
+.Content5 .Main_content  div h1:first-child{
   font-family: "GT Walsheim Pro Bold";
   font-weight: 800;
   font-size: 36px;
@@ -507,7 +517,7 @@ li > .Spirits{
   text-align: center;
   color: rgb(27, 27, 27);
 }
-.content5 .main_content  div h1:last-child{
+.Content5 .Main_content  div h1:last-child{
   font-family: Inter;
   font-style: normal;
   font-weight: 300;
@@ -520,27 +530,27 @@ li > .Spirits{
  /* End Slider */
 
  /* Begin Footer */
-.footer{
+.Footer{
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 64px 0px;
 }
-.footer1{
+.Footer1{
   display: flex;
   align-items: center;
 }
-.footer1 img{
+.Footer1 img{
   width: 50px;
   height: 50px;
 }
-.footer1 p{
+.Footer1 p{
   font-weight: 700;
   font-size: 24px;
   line-height: 150%;
   color: rgb(17, 25, 40);
 }
-.footer2{
+.Footer2{
   font-family: Inter;
   font-style: normal;
   font-weight: 400;
@@ -549,16 +559,16 @@ li > .Spirits{
   text-align: center;
   color: rgb(107, 114, 128);
 }
-.footer2 p strong{
+.Footer2 p strong{
   font-weight: 900;
 }
-.footer3{
+.Footer3{
   margin-top: 20px;
   width: 140px;
   display: flex;
   justify-content: space-between;
 }
-.footer3 a{
+.Footer3 a{
   color: rgb(156, 163, 175);
 }
  /* End Footer */
